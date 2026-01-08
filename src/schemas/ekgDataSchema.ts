@@ -159,4 +159,8 @@ export const ekgDataSchema = z.object({
   conclusion: z.string().describe("Заключение"),
 });
 
+export const ekgDataPartialSchema = ekgDataSchema.partial();
+export const ekgDataJSONSchema = z.toJSONSchema(ekgDataSchema);
+export const ekgDataPartialJSONSchema = z.toJSONSchema(ekgDataPartialSchema);
 export type EkgDataType = z.infer<typeof ekgDataSchema>;
+export type EkgDataPartialType = z.infer<typeof ekgDataPartialSchema>;
