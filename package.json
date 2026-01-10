@@ -1,18 +1,33 @@
 {
-  "name": "tt-echokg",
-  "private": true,
-  "version": "0.0.0",
+  "name": "tt-echokg-schemas",
+  "version": "0.0.1",
+  "description": "Zod schemas for EKG data",
   "type": "module",
+  "main": "./dist/tt-echokg.umd.js",
+  "module": "./dist/tt-echokg.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "devDependencies": {
     "typescript": "~5.9.3",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^3.9.1"
   },
   "peerDependencies": {
     "zod": "^4.3.5"
+  },
+  "keywords": [
+    "zod",
+    "schema",
+    "ekg",
+    "echokg",
+    "medical"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
