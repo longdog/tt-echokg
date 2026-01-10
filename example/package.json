@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "tt-echokg-schemas": "link:tt-echokg-schemas",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
